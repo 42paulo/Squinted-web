@@ -24,19 +24,28 @@
 
 <body class="bg-plasterPink text-charcoal font-sans antialiased selection:bg-sageGreen selection:text-white">
 
-    <!-- 🧭 NAVIGATION BAR -->
+    <!-- 🧭 NAVIGATION BAR WITH PROMINENT LOGO BRAND BOX -->
     <header
         class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-sageGreen/10 px-6 py-4 transition-all">
-        <div class="max-w-7xl mx-auto flex items-center justify-between">
-            <!-- Swapped text for image asset -->
-            <a href="#" class="block py-1">
-                <img src="assets/SquintedLogo.png" alt="Squinted Logo"
-                    class="h-12 md:h-14 w-auto object-contain object-left" />
-            </a>
+        <div class="max-w-7xl mx-auto flex items-center justify-between relative">
+
+            <!-- The Straddling Brand Box -->
+            <div
+                class="absolute top-[-16px] left-0 bg-white border-x border-b border-sageGreen/20 shadow-md px-6 py-4 rounded-b-2xl z-50">
+                <a href="#" class="block">
+                    <!-- NOTE: Ensure logo.png matches your exact case-sensitive file name in your assets folder -->
+                    <img src="assets/SquintedLogo.png" alt="Squinted Logo" class="h-10 md:h-12 w-auto object-contain" />
+                </a>
+            </div>
+
+            <!-- Spacer to push navigation links past the overlapping brand box -->
+            <div class="w-32 md:w-44"></div>
+
             <nav class="hidden md:flex space-x-8 font-medium">
                 <a href="#how-it-works" class="hover:text-sageGreen transition">How it Works</a>
                 <a href="#benefits" class="hover:text-sageGreen transition">Benefits</a>
             </nav>
+
             <a href="#download"
                 class="bg-sageGreen text-white px-5 py-2.5 rounded-full font-semibold shadow-sm hover:bg-charcoal transition duration-300 text-sm">
                 Get the App
@@ -89,13 +98,12 @@
             </div>
         </section>
 
-        <!-- 📱 SECTION 3: HOW IT WORKS (Bulletproof 2x2 Grid) -->
+        <!-- 📱 SECTION 3: HOW IT WORKS (With Complete Image Visibility) -->
         <section id="how-it-works" class="max-w-7xl mx-auto px-6 py-20 space-y-12">
             <div class="text-center">
                 <h2 class="text-3xl font-black uppercase tracking-tight">How It Works</h2>
             </div>
 
-            <!-- Explicit grid configuration: 1 col on mobile, 2 cols on medium/large screens -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
 
                 <!-- Card 1: Listing -->
@@ -111,11 +119,11 @@
                             to help you list your spectacles or sunglasses in seconds. Turning your old glasses into
                             cash has never been this smooth.</p>
                     </div>
-                    <!-- Bulletproof Image Wrapper -->
+                    <!-- Shrink-to-Fit Image Wrapper -->
                     <div
-                        class="mt-6 overflow-hidden rounded-xl bg-plasterPink/40 border border-sageGreen/10 aspect-[16/10] flex items-center justify-center">
+                        class="mt-6 p-4 overflow-hidden rounded-xl bg-stone-50 border border-sageGreen/10 aspect-[16/10] flex items-center justify-center">
                         <img src="assets/app-ui-aiverified.png" alt="Squinted AI Camera interface"
-                            class="w-full h-full object-cover object-center" />
+                            class="max-w-full max-h-full object-contain" />
                     </div>
                 </div>
 
@@ -133,11 +141,11 @@
                                 Match</strong> do the digging. The moment a user lists a frame that aligns with your
                             exact specs and measurements, we’ll ping you instantly so you never miss out.</p>
                     </div>
-                    <!-- Bulletproof Image Wrapper -->
+                    <!-- Shrink-to-Fit Image Wrapper -->
                     <div
-                        class="mt-6 overflow-hidden rounded-xl bg-plasterPink/40 border border-sageGreen/10 aspect-[16/10] flex items-center justify-center">
+                        class="mt-6 p-4 overflow-hidden rounded-xl bg-stone-50 border border-sageGreen/10 aspect-[16/10] flex items-center justify-center">
                         <img src="assets/app-ui-artryon.png" alt="Live AR Try-On"
-                            class="w-full h-full object-cover object-center" />
+                            class="max-w-full max-h-full object-contain" />
                     </div>
                 </div>
 
@@ -156,11 +164,11 @@
                             with <strong>Magnify</strong>. For a small fee, give your listing prime placement at the top
                             of the search feed for 7 days to get maximum eyeballs and a quick sale.</p>
                     </div>
-                    <!-- Bulletproof Image Wrapper -->
+                    <!-- Shrink-to-Fit Image Wrapper -->
                     <div
-                        class="mt-6 overflow-hidden rounded-xl bg-plasterPink/40 border border-sageGreen/10 aspect-[16/10] flex items-center justify-center">
+                        class="mt-6 p-4 overflow-hidden rounded-xl bg-stone-50 border border-sageGreen/10 aspect-[16/10] flex items-center justify-center">
                         <img src="assets/app-ui-magnify.png" alt="Magnify Listing Feature"
-                            class="w-full h-full object-cover object-center" />
+                            class="max-w-full max-h-full object-contain" />
                     </div>
                 </div>
 
@@ -177,11 +185,11 @@
                             re-lensing specialist to have your custom prescription fitted. Getting a fresh set of lenses
                             is quick, affordable, and the ultimate way to unlock a frame's second chance.</p>
                     </div>
-                    <!-- Bulletproof Image Wrapper -->
+                    <!-- Shrink-to-Fit Image Wrapper -->
                     <div
-                        class="mt-6 overflow-hidden rounded-xl bg-plasterPink/40 border border-sageGreen/10 aspect-[16/10] flex items-center justify-center">
+                        class="mt-6 p-4 overflow-hidden rounded-xl bg-stone-50 border border-sageGreen/10 aspect-[16/10] flex items-center justify-center">
                         <img src="assets/SquintedLogoTransparent.png" alt="Frame Delivery Box"
-                            class="w-full h-full object-cover object-center" />
+                            class="max-w-full max-h-full object-contain" />
                     </div>
                 </div>
 
