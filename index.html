@@ -25,33 +25,30 @@
 <body class="bg-plasterPink text-charcoal font-sans antialiased selection:bg-sageGreen selection:text-white">
 
     <!-- 🧭 NAVIGATION BAR WITH PROMINENT LOGO BRAND BOX -->
-    <header
-        class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-sageGreen/10 px-6 py-4 transition-all">
-        <div class="max-w-7xl mx-auto flex items-center justify-between relative">
-
-            <!-- The Straddling Brand Box -->
-            <div
-                class="absolute top-[-16px] left-0 bg-white border-x border-b border-sageGreen/20 shadow-md px-6 py-4 rounded-b-2xl z-50">
-                <a href="#" class="block">
-                    <!-- NOTE: Ensure logo.png matches your exact case-sensitive file name in your assets folder -->
-                    <img src="assets/SquintedLogo.png" alt="Squinted Logo" class="h-10 md:h-12 w-auto object-contain" />
-                </a>
-            </div>
-
-            <!-- Spacer to push navigation links past the overlapping brand box -->
-            <div class="w-32 md:w-44"></div>
-
-            <nav class="hidden md:flex space-x-8 font-medium">
-                <a href="#how-it-works" class="hover:text-sageGreen transition">How it Works</a>
-                <a href="#benefits" class="hover:text-sageGreen transition">Benefits</a>
-            </nav>
-
-            <a href="#download"
-                class="bg-sageGreen text-white px-5 py-2.5 rounded-full font-semibold shadow-sm hover:bg-charcoal transition duration-300 text-sm">
-                Get the App
+    <!-- 🧭 NAVIGATION BAR WITH ANCHORED BRAND BOX -->
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-sageGreen/10 px-6 py-4 transition-all">
+    <div class="max-w-7xl mx-auto flex items-center justify-between relative">
+        
+        <!-- Deep Straddling Brand Box: Aligns its bottom edge across to the top of the hero framework -->
+        <div class="absolute top-[-16px] left-0 bg-white border-x border-b border-sageGreen/20 shadow-md px-6 pt-6 pb-4 rounded-b-3xl z-50 flex items-end justify-center min-w-[120px] md:min-w-[150px] h-28 md:h-36">
+            <a href="#" class="block w-full">
+                <img src="assets/SquintedLogo.png" alt="Squinted Logo" class="h-12 md:h-16 w-full object-contain object-bottom" />
             </a>
         </div>
-    </header>
+
+        <!-- Generous spacer to prevent nav links from slipping behind the deeper logo block -->
+        <div class="w-36 md:w-48"></div>
+
+        <nav class="hidden md:flex space-x-8 font-medium">
+            <a href="#how-it-works" class="hover:text-sageGreen transition">How it Works</a>
+            <a href="#benefits" class="hover:text-sageGreen transition">Benefits</a>
+        </nav>
+        
+        <a href="#download" class="bg-sageGreen text-white px-5 py-2.5 rounded-full font-semibold shadow-sm hover:bg-charcoal transition duration-300 text-sm">
+            Get the App
+        </a>
+    </div>
+</header>
 
     <main>
         <!-- ⚡ SECTION 1: THE HERO (Split-Screen layout) -->
