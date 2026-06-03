@@ -29,8 +29,9 @@
         class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-sageGreen/10 px-6 py-4 transition-all">
         <div class="max-w-7xl mx-auto flex items-center justify-between">
             <!-- Swapped text for image asset -->
-            <a href="#" class="block">
-                <img src="assets/SquintedLogoTransparent.png" alt="Squinted Logo" class="h-8 w-auto object-contain" />
+            <a href="#" class="block py-1">
+                <img src="assets/SquintedLogoTransparent.png" alt="Squinted Logo"
+                    class="h-12 md:h-14 w-auto object-contain object-left" />
             </a>
             <nav class="hidden md:flex space-x-8 font-medium">
                 <a href="#how-it-works" class="hover:text-sageGreen transition">How it Works</a>
@@ -88,18 +89,21 @@
             </div>
         </section>
 
-        <!-- 📱 SECTION 3: HOW IT WORKS (2x2 Grid) -->
+        <!-- 📱 SECTION 3: HOW IT WORKS (Bulletproof 2x2 Grid) -->
         <section id="how-it-works" class="max-w-7xl mx-auto px-6 py-20 space-y-12">
             <div class="text-center">
                 <h2 class="text-3xl font-black uppercase tracking-tight">How It Works</h2>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8">
+            <!-- Explicit grid configuration: 1 col on mobile, 2 cols on medium/large screens -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+
                 <!-- Card 1: Listing -->
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-sageGreen/5 flex flex-col justify-between">
-                    <div>
+                <div
+                    class="bg-white p-6 md:p-8 rounded-3xl shadow-sm border border-sageGreen/5 flex flex-col justify-between">
+                    <div class="space-y-4">
                         <div
-                            class="w-12 h-12 rounded-full bg-plasterPink flex items-center justify-center font-bold text-sageGreen mb-6">
+                            class="w-12 h-12 rounded-full bg-plasterPink flex items-center justify-center font-bold text-sageGreen">
                             1</div>
                         <h3 class="text-xl font-bold mb-2">List with an AI Assist</h3>
                         <p class="text-charcoal/70 text-sm md:text-base">Got frames gathering dust? Snap a few bright
@@ -107,80 +111,81 @@
                             to help you list your spectacles or sunglasses in seconds. Turning your old glasses into
                             cash has never been this smooth.</p>
                     </div>
-                    <div class="mt-6 pt-4 bg-plasterPink/40 rounded-xl flex justify-center overflow-hidden">
-                        <img src="assets/app-ui-aiverified.png" alt="Squinted AI Camera interface"
-                            class="h-48 w-auto object-contain object-bottom drop-shadow-md" />
-                    </div>
-
-                    <!-- Card 2: Buying / Try-on -->
+                    <!-- Bulletproof Image Wrapper -->
                     <div
-                        class="bg-white p-8 rounded-3xl shadow-sm border border-sageGreen/5 flex flex-col justify-between">
-                        <div>
-                            <div
-                                class="w-12 h-12 rounded-full bg-plasterPink flex items-center justify-center font-bold text-sageGreen mb-6">
-                                2</div>
-                            <h3 class="text-xl font-bold mb-2">Live AR Try-On & Perfect Match Alerts</h3>
-                            <p class="text-charcoal/70 text-sm md:text-base">Browse the marketplace and virtually test
-                                out
-                                frames on your own face in real-time with our <strong>AR Try-On</strong>. Hunting for
-                                something highly specific? Save your prescription details and let <strong>Perfect
-                                    Match</strong> do the digging. The moment a user lists a frame that aligns with your
-                                exact specs and measurements, we’ll ping you instantly so you never miss out.</p>
-                        </div>
-                        <div class="mt-6 pt-4 bg-plasterPink/40 rounded-xl flex justify-center overflow-hidden">
-                            <img src="assets/app-ui-artryon.png" alt="Squinted AR Try-On interface"
-                                class="h-48 w-auto object-contain object-bottom drop-shadow-md" />
-                        </div>
+                        class="mt-6 overflow-hidden rounded-xl bg-plasterPink/40 border border-sageGreen/10 aspect-[16/10] flex items-center justify-center">
+                        <img src="assets/app-ui-aiverified.png" alt="Squinted AI Camera interface"
+                            class="w-full h-full object-cover object-center" />
+                    </div>
+                </div>
 
-                        <!-- Card 3: Magnify Feature -->
+                <!-- Card 2: Buying / Try-on -->
+                <div
+                    class="bg-white p-6 md:p-8 rounded-3xl shadow-sm border border-sageGreen/5 flex flex-col justify-between">
+                    <div class="space-y-4">
                         <div
-                            class="bg-white p-8 rounded-3xl shadow-sm border-2 border-sageGreen flex flex-col justify-between relative overflow-hidden">
-                            <span
-                                class="absolute top-4 right-4 bg-sageGreen text-white text-xs uppercase px-3 py-1 rounded-full font-bold tracking-wider">Premium
-                                Boost</span>
-                            <div>
-                                <div
-                                    class="w-12 h-12 rounded-full bg-sageGreen text-white flex items-center justify-center font-bold mb-6">
-                                    ✨</div>
-                                <h3 class="text-xl font-bold mb-2">Magnify Your Listing</h3>
-                                <p class="text-charcoal/70 text-sm md:text-base">Want to sell even faster? Boost your
-                                    frames
-                                    with <strong>Magnify</strong>. For a small fee, give your listing prime placement at
-                                    the
-                                    top
-                                    of the search feed for 7 days to get maximum eyeballs and a quick sale.</p>
-                            </div>
-                            <!-- UPDATED WITH YOUR REAL APP SCREENSHOT -->
-                            <div class="mt-6 pt-4 bg-plasterPink/40 rounded-xl flex justify-center overflow-hidden">
-                                <img src="assets/app-ui-magnify.png" alt="Squinted Magnify boost feature"
-                                    class="h-48 w-auto object-contain object-bottom drop-shadow-md" />
-                            </div>
+                            class="w-12 h-12 rounded-full bg-plasterPink flex items-center justify-center font-bold text-sageGreen">
+                            2</div>
+                        <h3 class="text-xl font-bold mb-2">Live AR Try-On & Perfect Match Alerts</h3>
+                        <p class="text-charcoal/70 text-sm md:text-base">Browse the marketplace and virtually test out
+                            frames on your own face in real-time with our <strong>AR Try-On</strong>. Hunting for
+                            something highly specific? Save your prescription details and let <strong>Perfect
+                                Match</strong> do the digging. The moment a user lists a frame that aligns with your
+                            exact specs and measurements, we’ll ping you instantly so you never miss out.</p>
+                    </div>
+                    <!-- Bulletproof Image Wrapper -->
+                    <div
+                        class="mt-6 overflow-hidden rounded-xl bg-plasterPink/40 border border-sageGreen/10 aspect-[16/10] flex items-center justify-center">
+                        <img src="assets/app-ui-artryon.png" alt="Live AR Try-On"
+                            class="w-full h-full object-cover object-center" />
+                    </div>
+                </div>
 
-                            <!-- Card 4: Lens and Go -->
-                            <div
-                                class="bg-white p-8 rounded-3xl shadow-sm border border-sageGreen/5 flex flex-col justify-between">
-                                <div>
-                                    <div
-                                        class="w-12 h-12 rounded-full bg-plasterPink flex items-center justify-center font-bold text-sageGreen mb-6">
-                                        4</div>
-                                    <h3 class="text-xl font-bold mb-2">Lens & Go</h3>
-                                    <p class="text-charcoal/70 text-sm md:text-base">Once your new frames arrive, the
-                                        journey
-                                        doesn't stop there. Simply take them to your favourite high-street optician or
-                                        an
-                                        online
-                                        re-lensing specialist to have your custom prescription fitted. Getting a fresh
-                                        set
-                                        of
-                                        lenses
-                                        is quick, affordable, and the ultimate way to unlock a frame's second chance.
-                                    </p>
-                                </div>
-                                <div
-                                    class="mt-6 h-32 bg-stone-100 rounded-xl flex items-center justify-center text-xs text-stone-400">
-                                    [App UI Mockup: Frame Delivery Box]</div>
-                            </div>
-                        </div>
+                <!-- Card 3: Magnify Feature -->
+                <div
+                    class="bg-white p-6 md:p-8 rounded-3xl shadow-sm border-2 border-sageGreen flex flex-col justify-between relative overflow-hidden">
+                    <span
+                        class="absolute top-4 right-4 bg-sageGreen text-white text-xs uppercase px-3 py-1 rounded-full font-bold tracking-wider">Premium
+                        Boost</span>
+                    <div class="space-y-4">
+                        <div
+                            class="w-12 h-12 rounded-full bg-sageGreen text-white flex items-center justify-center font-bold">
+                            ✨</div>
+                        <h3 class="text-xl font-bold mb-2">Magnify Your Listing</h3>
+                        <p class="text-charcoal/70 text-sm md:text-base">Want to sell even faster? Boost your frames
+                            with <strong>Magnify</strong>. For a small fee, give your listing prime placement at the top
+                            of the search feed for 7 days to get maximum eyeballs and a quick sale.</p>
+                    </div>
+                    <!-- Bulletproof Image Wrapper -->
+                    <div
+                        class="mt-6 overflow-hidden rounded-xl bg-plasterPink/40 border border-sageGreen/10 aspect-[16/10] flex items-center justify-center">
+                        <img src="assets/app-ui-magnify.png" alt="Magnify Listing Feature"
+                            class="w-full h-full object-cover object-center" />
+                    </div>
+                </div>
+
+                <!-- Card 4: Lens and Go -->
+                <div
+                    class="bg-white p-6 md:p-8 rounded-3xl shadow-sm border border-sageGreen/5 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div
+                            class="w-12 h-12 rounded-full bg-plasterPink flex items-center justify-center font-bold text-sageGreen">
+                            4</div>
+                        <h3 class="text-xl font-bold mb-2">Lens & Go</h3>
+                        <p class="text-charcoal/70 text-sm md:text-base">Once your new frames arrive, the journey
+                            doesn't stop there. Simply take them to your favourite high-street optician or an online
+                            re-lensing specialist to have your custom prescription fitted. Getting a fresh set of lenses
+                            is quick, affordable, and the ultimate way to unlock a frame's second chance.</p>
+                    </div>
+                    <!-- Bulletproof Image Wrapper -->
+                    <div
+                        class="mt-6 overflow-hidden rounded-xl bg-plasterPink/40 border border-sageGreen/10 aspect-[16/10] flex items-center justify-center">
+                        <img src="assets/SquintedLogoTransparent.png" alt="Frame Delivery Box"
+                            class="w-full h-full object-cover object-center" />
+                    </div>
+                </div>
+
+            </div>
         </section>
 
         <!-- ⚖️ SECTION 4: THE BENEFITS GRID -->
