@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Squinted</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        plasterPink: '#f3ece7', 
+                        sageGreen: '#6b8271',   
+                        charcoal: '#2d312e',    
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-plasterPink text-charcoal font-sans antialiased">
+
+    <header class="bg-white/80 backdrop-blur-md border-b border-sageGreen/10 px-6 py-4">
+        <div class="max-w-4xl mx-auto flex items-center justify-between">
+            <a href="index.html" class="text-xl font-black tracking-tight text-charcoal hover:text-sageGreen transition">← SQUINTED</a>
+            <span class="text-xs uppercase tracking-widest font-semibold text-sageGreen">Help Center</span>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 md:py-20">
+        <div class="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-sageGreen/5 space-y-10">
+            
+            <div class="border-b border-stone-100 pb-6">
+                <h1 class="text-3xl font-black uppercase tracking-tight text-charcoal mb-2">Frequently Asked Questions</h1>
+                <p class="text-sm text-charcoal/70">Everything you need to know about buying, selling, and re-lensing on the UK's first dedicated circular eyewear marketplace.</p>
+            </div>
+
+            <div class="space-y-6">
+                <h2 class="text-lg font-black uppercase tracking-wider text-sageGreen border-b border-sageGreen/20 pb-2">General Questions</h2>
+                
+                <div class="space-y-2">
+                    <h3 class="font-bold text-base md:text-lg text-charcoal">How do I put my personal prescription lenses into frames I buy here?</h3>
+                    <p class="text-charcoal/80 text-sm md:text-base leading-relaxed">It’s incredibly simple. Once your pre-owned frames arrive, you can take them directly to any high-street optician or use a trusted online re-lensing service. They will simply cut and fit a fresh pair of lenses matching your custom prescription directly into the frame structure.</p>
+                </div>
+
+                <div class="space-y-2">
+                    <h3 class="font-bold text-base md:text-lg text-charcoal">What are "Perfect Match" Alerts?</h3>
+                    <p class="text-charcoal/80 text-sm md:text-base leading-relaxed">If you’re looking for a highly specific frame size or measurement configuration, you can save your specs inside the app. Perfect Match works in the background—the moment another user lists a set of glasses matching your target data, we'll ping your device instantly.</p>
+                </div>
+            </div>
+
+            <div class="space-y-6 pt-4">
+                <h2 class="text-lg font-black uppercase tracking-wider text-sageGreen border-b border-sageGreen/20 pb-2">Selling on Squinted</h2>
+                
+                <div class="space-y-2">
+                    <h3 class="font-bold text-base md:text-lg text-charcoal">What is the "Magnify" feature?</h3>
+                    <p class="text-charcoal/80 text-sm md:text-base leading-relaxed">Magnify is our premium listing boost tool. For a small fee, you can supercharge your frames to pin them to the absolute top of the user feed for 7 days, guaranteeing maximum impressions and higher chances of a speedy transaction.</p>
+                </div>
+
+                <div class="space-y-2">
+                    <h3 class="font-bold text-base md:text-lg text-charcoal">How do payments and shipping work?</h3>
+                    <p class="text-charcoal/80 text-sm md:text-base leading-relaxed">All checkouts are managed via our integrated Stripe Connect portal for absolute payment security. Shipping parameters are entirely standardized across the platform, giving sellers trackable, zero-guesswork postage options to ship items safely.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="text-center py-8 text-xs text-stone-500 max-w-4xl mx-auto px-6 border-t border-sageGreen/10">
+        <p>© 2026 Squinted Ltd. Company Registered in the UK. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
