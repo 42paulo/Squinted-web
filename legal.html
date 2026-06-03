@@ -23,10 +23,29 @@
 
 <body class="bg-plasterPink text-charcoal font-sans antialiased">
 
-    <header class="bg-white/80 backdrop-blur-md border-b border-sageGreen/10 px-6 py-4">
-        <div class="max-w-4xl mx-auto flex items-center justify-between">
-            <a href="index.html"
-                class="text-xl font-black tracking-tight text-charcoal hover:text-sageGreen transition">← SQUINTED</a>
+    <!-- 🧭 NAVIGATION BAR WITH FULL-BLEED BRAND BOX -->
+    <header
+        class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-sageGreen/10 px-6 py-4 transition-all">
+        <div class="max-w-4xl mx-auto flex items-center justify-between relative">
+
+            <!-- Full-Bleed Brand Box pointing back to Homepage -->
+            <div
+                class="absolute top-[-16px] left-0 bg-white border-x border-b border-sageGreen/20 shadow-md rounded-b-3xl z-50 overflow-hidden w-28 md:w-36 h-28 md:h-36">
+                <a href="index.html" class="block w-full h-full relative group">
+                    <img src="assets/SquintedLogo.png" alt="Squinted Logo" class="w-full h-full object-cover" />
+                    <!-- Subtle back-arrow hover effect overlay -->
+                    <div
+                        class="absolute inset-0 bg-charcoal/5 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <span class="bg-white/90 text-charcoal text-xs font-bold px-2 py-1 rounded-md shadow-sm">←
+                            Home</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Spacer matching logo width -->
+            <div class="w-28 md:w-36"></div>
+
+            <!-- Right-aligned directory badge -->
             <span class="text-xs uppercase tracking-widest font-semibold text-sageGreen">Compliance Directory</span>
         </div>
     </header>
@@ -94,7 +113,8 @@
                     class="p-5 rounded-2xl bg-plasterPink/30 border border-sageGreen/10 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:bg-plasterPink/60 transition">
                     <div>
                         <h2 class="font-bold text-lg text-charcoal">Buyer Protection Policy</h2>
-                        <p class="text-xs text-stone-500">Our commitment to ensuring a safe and secure shopping experience for all users.</p>
+                        <p class="text-xs text-stone-500">Our commitment to ensuring a safe and secure shopping
+                            experience for all users.</p>
                     </div>
                     <a href="#"
                         class="text-xs font-bold uppercase tracking-wider text-sageGreen bg-white px-4 py-2 rounded-full shadow-sm hover:bg-charcoal hover:text-white transition whitespace-nowrap self-start sm:self-auto">Read
@@ -105,7 +125,8 @@
                     class="p-5 rounded-2xl bg-plasterPink/30 border border-sageGreen/10 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:bg-plasterPink/60 transition">
                     <div>
                         <h2 class="font-bold text-lg text-charcoal">Buyer Protection Fee</h2>
-                        <p class="text-xs text-stone-500">Explanation of the fee structure for our buyer protection service.</p>
+                        <p class="text-xs text-stone-500">Explanation of the fee structure for our buyer protection
+                            service.</p>
                     </div>
                     <a href="#"
                         class="text-xs font-bold uppercase tracking-wider text-sageGreen bg-white px-4 py-2 rounded-full shadow-sm hover:bg-charcoal hover:text-white transition whitespace-nowrap self-start sm:self-auto">Read

@@ -25,32 +25,34 @@
 <body class="bg-plasterPink text-charcoal font-sans antialiased selection:bg-sageGreen selection:text-white">
 
     <!-- 🧭 NAVIGATION BAR WITH PROMINENT LOGO BRAND BOX -->
-    <!-- 🧭 NAVIGATION BAR WITH ANCHORED BRAND BOX -->
-<!-- 🧭 NAVIGATION BAR WITH FULL-BLEED BRAND BOX -->
-<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-sageGreen/10 px-6 py-4 transition-all">
-    <div class="max-w-7xl mx-auto flex items-center justify-between relative">
-        
-        <!-- Full-Bleed Brand Box (Zero padding, overflow hidden to snap the image to the rounded corners) -->
-        <div class="absolute top-[-16px] left-0 bg-white border-x border-b border-sageGreen/20 shadow-md rounded-b-3xl z-50 overflow-hidden w-28 md:w-36 h-28 md:h-36">
-            <a href="#" class="block w-full h-full">
-                <!-- Stripped padding and forced to scale perfectly edge-to-edge -->
-                <img src="assets/SquintedLogo.png" alt="Squinted Logo" class="w-full h-full object-cover" />
+
+    <header
+        class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-sageGreen/10 px-6 py-4 transition-all">
+        <div class="max-w-7xl mx-auto flex items-center justify-between relative">
+
+            <!-- Full-Bleed Brand Box (Zero padding, overflow hidden to snap the image to the rounded corners) -->
+            <div
+                class="absolute top-[-16px] left-0 bg-white border-x border-b border-sageGreen/20 shadow-md rounded-b-3xl z-50 overflow-hidden w-28 md:w-36 h-28 md:h-36">
+                <a href="#" class="block w-full h-full">
+                    <!-- Stripped padding and forced to scale perfectly edge-to-edge -->
+                    <img src="assets/SquintedLogo.png" alt="Squinted Logo" class="w-full h-full object-cover" />
+                </a>
+            </div>
+
+            <!-- Generous spacer to keep navigation links safe from overlap -->
+            <div class="w-32 md:w-44"></div>
+
+            <nav class="hidden md:flex space-x-8 font-medium">
+                <a href="#how-it-works" class="hover:text-sageGreen transition">How it Works</a>
+                <a href="#benefits" class="hover:text-sageGreen transition">Benefits</a>
+            </nav>
+
+            <a href="#download"
+                class="bg-sageGreen text-white px-5 py-2.5 rounded-full font-semibold shadow-sm hover:bg-charcoal transition duration-300 text-sm">
+                Get the App
             </a>
         </div>
-
-        <!-- Generous spacer to keep navigation links safe from overlap -->
-        <div class="w-32 md:w-44"></div>
-
-        <nav class="hidden md:flex space-x-8 font-medium">
-            <a href="#how-it-works" class="hover:text-sageGreen transition">How it Works</a>
-            <a href="#benefits" class="hover:text-sageGreen transition">Benefits</a>
-        </nav>
-        
-        <a href="#download" class="bg-sageGreen text-white px-5 py-2.5 rounded-full font-semibold shadow-sm hover:bg-charcoal transition duration-300 text-sm">
-            Get the App
-        </a>
-    </div>
-</header>
+    </header>
 
     <main>
         <!-- ⚡ SECTION 1: THE HERO (Split-Screen layout) -->
