@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 1. CHANGE THIS TO YOUR POLICY NAME -->
+    <title>Privacy Policy - Squinted</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        plasterPink: '#f3ece7',
+                        sageGreen: '#6b8271',
+                        charcoal: '#2d312e',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-plasterPink text-charcoal font-sans antialiased">
+
+    <!-- 🧭 STICKY NAVIGATION BAR WITH STRADDLING BRAND BOX -->
+    <header
+        class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-sageGreen/10 px-6 py-4 transition-all">
+        <div class="max-w-4xl mx-auto flex items-center justify-between relative">
+
+            <!-- Full-Bleed Brand Box pointing back to Homepage -->
+            <div
+                class="absolute top-[-16px] left-0 bg-white border-x border-b border-sageGreen/20 shadow-md rounded-b-3xl z-50 overflow-hidden w-28 md:w-36 h-28 md:h-36">
+                <a href="index.html" class="block w-full h-full relative group">
+                    <img src="assets/SquintedLogo.png" alt="Squinted Logo" class="w-full h-full object-cover" />
+                    <div
+                        class="absolute inset-0 bg-charcoal/5 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <span class="bg-white/90 text-charcoal text-xs font-bold px-2 py-1 rounded-md shadow-sm">←
+                            Home</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="w-28 md:w-36"></div>
+
+            <!-- 2. CHANGE THIS BADGE TEXT TO MATCH YOUR POLICY TYPE -->
+            <span class="text-xs uppercase tracking-widest font-semibold text-sageGreen text-right">Legal / Privacy
+                Framework</span>
+        </div>
+    </header>
+
+    <!-- 📄 COMPLIANCE DOCUMENT TEXT CANVAS -->
+    <main class="max-w-4xl mx-auto px-6 py-16 md:py-24">
+        <div class="border-b border-stone-100 pb-6">
+            <h1 class="text-3xl font-black uppercase tracking-tight text-charcoal mb-2">Counterfeit & Authenticity
+                Policy</h1>
+            <p class="text-xs text-stone-400 font-medium">Last Updated: June 2026</p>
+        </div>
+
+        <section class="space-y-3">
+            <h2 class="text-xl font-bold text-sageGreen uppercase tracking-tight">1. Zero-Tolerance Anti-Counterfeit
+                Mandate</h2>
+            <p class="text-charcoal/80 leading-relaxed text-sm md:text-base">
+                Squinted Ltd is built on trust, circular sustainability, and structural integrity. The creation,
+                listing, distribution, or sale of counterfeit goods severely undermines our community and constitutes a
+                direct violation of United Kingdom intellectual property laws.
+            </p>
+            <p class="text-charcoal/80 leading-relaxed text-sm md:text-base">
+                We maintain a strict, <strong>zero-tolerance policy</strong> toward counterfeit items, replicas, clones,
+                or unauthorized gray-market reproductions of any brand cataloged on our marketplace. Every single item
+                listed must be 100% authentic.
+            </p>
+        </section>
+
+        <section class="space-y-3">
+            <h2 class="text-xl font-bold text-sageGreen uppercase tracking-tight">2. Verification Vetting and Monitoring
+            </h2>
+            <p class="text-charcoal/80 leading-relaxed text-sm md:text-base">
+                To maintain an uncompromised marketplace catalog, Squinted utilizes a multi-layered ecosystem to review
+                listings before and after they appear live on our platform:
+            </p>
+            <ul class="list-disc pl-5 space-y-2 text-charcoal/80 text-sm md:text-base">
+                <li><strong>AI Frame Verification:</strong> Our built-in camera layout tools examine structural frame
+                    proportions, logos, hinge setups, and inner arm stamps against known brand manufacturing standards
+                    during the onboarding upload phase.</li>
+                <li><strong>Community Moderation:</strong> Verified community members and internal brand security teams
+                    have immediate, direct mechanisms to flag suspicious or mislabeled listings for urgent
+                    administrative review.</li>
+                <li><strong>Post-Sale Inspection Windows:</strong> As outlined in our Buyer Protection framework, funds
+                    processed via Stripe Connect are withheld in a secure staging capacity, granting buyers an explicit
+                    window upon physical delivery to run cross-checks before any payouts are finalized.</li>
+            </ul>
+        </section>
+
+        <section class="space-y-3">
+            <h2 class="text-xl font-bold text-sageGreen uppercase tracking-tight">3. Seller Infractions and Account
+                Penalty Tiering</h2>
+            <p class="text-charcoal/80 leading-relaxed text-sm md:text-base">
+                If an item listed by a seller is verified to be counterfeit, unauthentic, or significantly
+                misrepresented regarding its structural provenance, Squinted Ltd reserves the absolute right to take
+                immediate, unilateral enforcement action.
+            </p>
+            <p class="text-charcoal/80 leading-relaxed text-sm md:text-base">
+                Depending on the gravity and frequency of the infraction, actions include:
+            </p>
+            <ul class="list-disc pl-5 space-y-2 text-charcoal/80 text-sm md:text-base">
+                <li>Immediate, permanent deletion of the non-compliant product listing from the public marketplace.</li>
+                <li>Indefinite withholding or total cancellation of pending Stripe transaction payouts for the disputed
+                    order, with funds routed entirely back to the defrauded buyer.</li>
+                <li>Immediate, permanent suspension of the seller's account profile and a comprehensive platform ban
+                    across our device networks.</li>
+                <li>Reporting systemic or commercial-scale fraudulent operations directly to UK Trading Standards and
+                    relevant law enforcement frameworks.</li>
+            </ul>
+        </section>
+
+        <section class="space-y-3">
+            <h2 class="text-xl font-bold text-sageGreen uppercase tracking-tight">4. Buyer Recourse and Dispute
+                Processes</h2>
+            <p class="text-charcoal/80 leading-relaxed text-sm md:text-base">
+                If you purchase a pair of frames on Squinted and possess reasonable grounds to suspect they are not
+                authentic upon physical arrival, you must trigger a dispute within our specified protection window
+                before funds are released.
+            </p>
+            <p class="text-charcoal/80 leading-relaxed text-sm md:text-base">
+                Buyers will be asked to upload clear, close-up photographs detailing the areas of concern (such as
+                misaligned branding stamps, substandard hinge hardware, or weight anomalies). Our dispute management
+                panel will thoroughly audit the ticket. If the frame is determined to be unauthentic, the transaction
+                will be cancelled immediately, and a full refund will be processed back to your original payment method.
+                Counterfeit items may be ordered to be destroyed or surrendered rather than returned to the seller,
+                preventing them from re-entering circulation.
+            </p>
+        </section>
+
+        <section class="space-y-3">
+            <h2 class="text-xl font-bold text-sageGreen uppercase tracking-tight">5. Brand Protection & Intellectual
+                Property Cooperation</h2>
+            <p class="text-charcoal/80 leading-relaxed text-sm md:text-base">
+                Squinted Ltd deeply respects intellectual property rights. We cooperate transparently with designer
+                labels, independent eyewear manufacturers, and trademark owners to protect their brand architecture. If
+                you are an authorized brand representative looking to issue a removal notice regarding an unauthorized
+                use of corporate branding or a suspected replica listing, submit your claim directly to our compliance
+                desk at <a href="mailto:admin@squinted.co.uk"
+                    class="text-sageGreen hover:underline font-semibold">admin@squinted.co.uk</a>.
+            </p>
+        </section>
+    </main>
+
+    <!-- MINIMALIST COMPLIANCE FOOTER -->
+    <footer class="text-center py-8 text-xs text-stone-500 max-w-4xl mx-auto px-6 border-t border-sageGreen/10">
+        <p>© 2026 Squinted Ltd. Company Registered in the UK. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

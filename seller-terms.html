@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 1. CHANGE THIS TO YOUR POLICY NAME -->
+    <title>Privacy Policy - Squinted</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        plasterPink: '#f3ece7',
+                        sageGreen: '#6b8271',
+                        charcoal: '#2d312e',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-plasterPink text-charcoal font-sans antialiased">
+
+    <!-- 🧭 STICKY NAVIGATION BAR WITH STRADDLING BRAND BOX -->
+    <header
+        class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-sageGreen/10 px-6 py-4 transition-all">
+        <div class="max-w-4xl mx-auto flex items-center justify-between relative">
+
+            <!-- Full-Bleed Brand Box pointing back to Homepage -->
+            <div
+                class="absolute top-[-16px] left-0 bg-white border-x border-b border-sageGreen/20 shadow-md rounded-b-3xl z-50 overflow-hidden w-28 md:w-36 h-28 md:h-36">
+                <a href="index.html" class="block w-full h-full relative group">
+                    <img src="assets/SquintedLogo.png" alt="Squinted Logo" class="w-full h-full object-cover" />
+                    <div
+                        class="absolute inset-0 bg-charcoal/5 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <span class="bg-white/90 text-charcoal text-xs font-bold px-2 py-1 rounded-md shadow-sm">←
+                            Home</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="w-28 md:w-36"></div>
+
+            <!-- 2. CHANGE THIS BADGE TEXT TO MATCH YOUR POLICY TYPE -->
+            <span class="text-xs uppercase tracking-widest font-semibold text-sageGreen text-right">Legal / Privacy
+                Framework</span>
+        </div>
+    </header>
+
+    <!-- 📄 COMPLIANCE DOCUMENT TEXT CANVAS -->
+    <main class="max-w-4xl mx-auto px-6 py-16 md:py-24">
+        <div class="border-b border-stone-100 pb-6">
+            <h1 class="text-3xl font-black uppercase tracking-tight text-charcoal mb-2">Marketplace Seller Terms</h1>
+            <p class="text-xs text-stone-400 font-medium">Last Updated: June 2026</p>
+        </div>
+
+        <!-- 📦 SELLER ACCOUNT ONBOARDING -->
+        <section class="space-y-3">
+            <h2 class="text-xl font-bold text-sageGreen uppercase tracking-tight">1. Seller Registration & Stripe
+                Integration</h2>
+            <p class="text-charcoal/80 leading-relaxed text-sm md:text-base">
+                These Marketplace Seller Terms apply to all users who list items for sale on the Squinted platform. To
+                list inventory, you must complete our comprehensive seller verification process.
+            </p>
+            <p class="text-charcoal/80 leading-relaxed text-sm md:text-base">
+                Squinted Ltd partners exclusively with Stripe Connect to verify merchant profiles and facilitate
+                financial disbursements. By listing an item, you authorize Squinted to create a Stripe Connected Account
+                on your behalf and agree to provide accurate banking, identity, and contact references. Payouts cannot
+                be processed to unverified, un-linked, or non-UK bank accounts.
+            </p>
+        </section>
+
+        <!-- 👓 LISTING METADATA AND PHOTOGRAPHY STANDARDS -->
+        <section class="space-y-3">
+            <h2 class="text-xl font-bold text-sageGreen uppercase tracking-tight">2. Listing Requirements &
+                Representation</h2>
+            <p class="text-charcoal/80 leading-relaxed text-sm md:text-base">
+                Sellers assume full legal and administrative responsibility for the accuracy of their product listings.
+                All listings must conform to the following baseline parameters:
+            </p>
+            <ul class="list-disc pl-5 space-y-2 text-charcoal/80 text-sm md:text-base">
+                <li><strong>Original Imagery:</strong> Listings must utilize clear, unedited photographs taken directly
+                    by the seller. The use of stock photos, corporate brand marketing assets, or images scraped from
+                    external retail web pages is strictly prohibited.</li>
+                <li><strong>Accurate Specifications:</strong> You must explicitly detail the condition category (e.g.,
+                    Mint, Great, Good etc.) and accurately catalog all structural parameters, including
+                    frame lens width, bridge width, and temple length.</li>
+                <li><strong>Defect Disclosure:</strong> Any scratches on lenses, structural misalignment, worn branding
+                    stamps, or damage to hardware hinges must be clearly highlighted in both the text description and
+                    accompanying photographs.</li>
+            </ul>
+        </section>
+
+        <!-- 🚚 SHIPPING SLA AND FULFILLMENT OBLIGATIONS -->
+        <section class="space-y-3">
+            <h2 class="text-xl font-bold text-sageGreen uppercase tracking-tight">3. Shipping Timelines & Fulfillment
+                Commitments</h2>
+            <p class="text-charcoal/80 leading-relaxed text-sm md:text-base">
+                Once a buyer completes checkout, a binding sales contract is generated directly between you and the
+                buyer. To maintain platform reliability, you agree to fulfill orders in accordance with our strict
+                logistics window:
+            </p>
+            <ul class="list-disc pl-5 space-y-2 text-charcoal/80 text-sm md:text-base">
+                <li><strong>Fulfillment Window:</strong> You must package and dispatch the sold eyewear within five (5)
+                    business days of receiving the order confirmation.</li>
+                <li><strong>Tracking Requirements:</strong> Unless an integrated pre-paid shipping label option is
+                    utilized, you must update the platform with a valid UK tracking reference immediately upon shipment.
+                    Failure to provide verifiable tracking within the specified allocation window may result in
+                    automatic order cancellation and a full buyer refund.</li>
+                <li><strong>Secure Packaging:</strong> Eyewear must be shipped inside a protective hard case or securely
+                    wrapped in bubble wrap within a sturdy cardboard box to prevent structural crushing during transit.
+                    Squinted Ltd is not liable for items damaged due to substandard seller packaging.</li>
+            </ul>
+        </section>
+
+        <!-- 💰 FEES, COMMISSIONS, AND ESCROW DISBURSEMENT -->
+        <section class="space-y-3">
+            <h2 class="text-xl font-bold text-sageGreen uppercase tracking-tight">4. Fees, Commission, and Payout
+                Mechanics</h2>
+            <p class="text-charcoal/80 leading-relaxed text-sm md:text-base">
+                Listing an item on Squinted is completely free. Upon a successful sale, Squinted Ltd deducts a
+                structural platform commission and payment processing fee from the total purchase price prior to final
+                distribution. All applicable fee percentages are displayed inside your profile dashboard.
+            </p>
+            <p class="text-charcoal/80 leading-relaxed text-sm md:text-base">
+                To safeguard the community ecosystem, funds paid by the buyer are held securely in a temporary staging
+                capacity within Stripe Connect. Payouts are triggered and disbursed directly to your linked bank account
+                only when the buyer confirms safe delivery, or when the 72-hour post-delivery inspection window expires
+                without a dispute being logged.
+            </p>
+        </section>
+
+        <!-- 🔄 RETURNS AND SELLER DISPUTE RESOLUTION -->
+        <section class="space-y-3">
+            <h2 class="text-xl font-bold text-sageGreen uppercase tracking-tight">5. Returns, Misrepresentation, and
+                Dispute Protocols</h2>
+            <p class="text-charcoal/80 leading-relaxed text-sm md:text-base">
+                Because Squinted is a peer-to-peer marketplace, buyers do not have a statutory right to return items
+                simply due to a change of mind or personal preference regarding facial fit. All sales are final.
+            </p>
+            <p class="text-charcoal/80 leading-relaxed text-sm md:text-base">
+                However, if a buyer files a formal dispute proving that an item arrived broken, counterfeit, or
+                significantly misrepresented (e.g., un-disclosed lens scratches or completely incorrect frame
+                dimensions), the transaction will be suspended. If our administrative panel resolves the dispute in
+                favor of the buyer, the pending payout will be reversed entirely, and you may be held liable for return
+                shipping costs or platform transaction penalties.
+            </p>
+        </section>
+    </main>
+
+    <!-- MINIMALIST COMPLIANCE FOOTER -->
+    <footer class="text-center py-8 text-xs text-stone-500 max-w-4xl mx-auto px-6 border-t border-sageGreen/10">
+        <p>© 2026 Squinted Ltd. Company Registered in the UK. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
