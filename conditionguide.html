@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 1. CHANGE THIS TO YOUR POLICY NAME -->
+    <title>Privacy Policy - Squinted</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        plasterPink: '#f3ece7',
+                        sageGreen: '#6b8271',
+                        charcoal: '#2d312e',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-plasterPink text-charcoal font-sans antialiased">
+
+    <!-- 🧭 STICKY NAVIGATION BAR WITH STRADDLING BRAND BOX -->
+    <header
+        class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-sageGreen/10 px-6 py-4 transition-all">
+        <div class="max-w-4xl mx-auto flex items-center justify-between relative">
+
+            <!-- Full-Bleed Brand Box pointing back to Homepage -->
+            <div
+                class="absolute top-[-16px] left-0 bg-white border-x border-b border-sageGreen/20 shadow-md rounded-b-3xl z-50 overflow-hidden w-28 md:w-36 h-28 md:h-36">
+                <a href="index.html" class="block w-full h-full relative group">
+                    <img src="assets/SquintedLogo.png" alt="Squinted Logo" class="w-full h-full object-cover" />
+                    <div
+                        class="absolute inset-0 bg-charcoal/5 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <span class="bg-white/90 text-charcoal text-xs font-bold px-2 py-1 rounded-md shadow-sm">←
+                            Home</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="w-28 md:w-36"></div>
+
+            <!-- 2. CHANGE THIS BADGE TEXT TO MATCH YOUR POLICY TYPE -->
+            <span class="text-xs uppercase tracking-widest font-semibold text-sageGreen text-right">Help Hub</span>
+        </div>
+    </header>
+
+    <!-- 📄 COMPLIANCE DOCUMENT TEXT CANVAS -->
+    <main class="max-w-4xl mx-auto px-6 py-16 md:py-24">
+        <div class="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-sageGreen/5 space-y-10">
+
+            <!-- Document Header -->
+            <div class="border-b border-stone-100 pb-6">
+                <!-- 3. UPDATE YOUR H1 TITLE -->
+                <h1 class="text-3xl font-black uppercase tracking-tight text-charcoal mb-2">Condition Guide</h1>
+                <!-- 4. UPDATE THE DATE -->
+                <p class="text-xs text-stone-400 font-medium">Last Updated: June 2026</p>
+            </div>
+
+            <section class="space-y-3">
+                <h2 class="text-xl font-bold text-sageGreen uppercase tracking-tight"> </h2>
+                <p class="text-charcoal/80 leading-relaxed text-sm md:text-base">
+                    Honesty is the best policy! Use these categories to tell your frames' life story. Remember, even if
+                    they aren't perfect, there’s a face out there for every pair.
+                </p>
+
+                <ul class="list-disc pl-5 space-y-2 text-charcoal/80 text-sm md:text-base">
+                    <li><strong class="text-charcoal">Mint (The "Like New" Pair)</strong></li>
+                    <li>These are the ones that lived in their case and barely saw the sun.
+                        The Look: No scratches on the lenses, no scuffs on the frames, and the hinges are nice and
+                        snappy.
+                        The Vibe: It’s like they just walked out of the optician’s boutique. No need to squint
+                        here—they’re flawless.
+                    </li>
+
+                    <li><strong class="text-charcoal">Great (The "Lightly Loved" Pair)</strong></li>
+                    <li>You wore them, you loved them, but you took great care of them.
+                        The Look: Maybe a tiny, invisible scuff on the arm or a microscopic mark on the lens that
+                        doesn't affect your vision.
+                        The Vibe: Still look brand new to the casual observer. You’d have to really squint to find a
+                        flaw.
+                    </li>
+
+                    <li><strong class="text-charcoal">Good (The "Daily Drivers")</strong></li>
+                    <li>These were your go-to pair and they’ve got the character to prove it.
+                        The Look: Minor surface scratches on the lenses or some slight fading of the logo on the inside
+                        of the arm. Hinges might be a little loose (but totally fixable!).
+                        The Vibe: Perfect for someone planning to re-lens them anyway! A solid, stylish frame with
+                        plenty of life left.
+                    </li>
+
+                    <li><strong class="text-charcoal">Fair (The "Project" Frames)</strong></li>
+                    <li>These have been through some adventures.
+                        The Look: Visible scratches, perhaps a bit of "stretch" to the fit, or significant wear on the
+                        finish.
+                        The Vibe: Priced to move! These are perfect for someone who wants a designer look on a DIY
+                        budget.
+                    </li>
+
+                    <li><strong class="text-charcoal">Pro-Tip: The "Flaw Feature"</strong></li>
+                    <li>If there’s a specific scratch or a nick, don't try to hide it! Zoom in and take a "Squint-Shot."
+                        Why? Buyers actually trust sellers more when they point out the imperfections. It shows you’re a
+                        real person being totally upfront.
+                    </li>
+                </ul>
+
+                <!-- ✉️ RE-ASSURANCE SUPPORT CONTACT CALLOUT -->
+                <div class="pt-6 border-t border-stone-100">
+                    <p class="text-xs text-stone-500">
+                        If you have questions regarding our compliance definitions or structural policies, reach out to
+                        the
+                        Squinted administration team at <a href="mailto:support@squinted.co.uk"
+                            class="text-sageGreen hover:underline font-semibold">support@squinted.co.uk</a>.
+                    </p>
+                </div>
+
+        </div>
+    </main>
+
+    <!-- MINIMALIST COMPLIANCE FOOTER -->
+    <footer class="text-center py-8 text-xs text-stone-500 max-w-4xl mx-auto px-6 border-t border-sageGreen/10">
+        <p>© 2026 Squinted Ltd. Company Registered in the UK. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
