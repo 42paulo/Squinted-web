@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Squinted Pre-Launch"
-AuthUserFile /home/www/htdocs/.htpasswd
-Require valid-user
