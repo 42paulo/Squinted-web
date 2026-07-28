@@ -68,7 +68,7 @@
                 <p class="text-charcoal font-semibold text-sm md:text-base leading-relaxed">
                     In short: we collect the data needed to run the marketplace and process orders, we don't sell it
                     on for marketing, and you have the usual UK GDPR rights over it — including asking us to access,
-                    correct, or delete what we hold. See section 6 below for how to exercise these.
+                    correct, or delete what we hold. See section 7 below for how to exercise these.
                 </p>
             </div>
 
@@ -105,8 +105,8 @@
                 <ul class="list-disc pl-5 space-y-2 text-charcoal/80 text-sm md:text-base">
                     <li>Identity Data: Full name and username</li>
                     <li>Contact Data: Email address, telephone number, and delivery/billing addresses.</li>
-                    <li>Financial Data: Bank account and payment card details (processed securely via PCI-compliant
-                        partners).</li>
+                    <li>Financial Data: Bank account and payment card details (processed securely by Stripe — see
+                        Section 3 below).</li>
                     <li>Transaction Data: Details about payments to and from you and products you have purchased or
                         sold.</li>
                     <li>Technical Data: IP address, login data, and browser type</li>
@@ -114,21 +114,53 @@
             </section>
 
             <section class="space-y-3">
-                <h2 class="text-xl font-bold text-sageGreen uppercase tracking-tight">3. Our Legal Basis for Processing
+                <h2 class="text-xl font-bold text-sageGreen uppercase tracking-tight">3. Service Providers We Use
+                </h2>
+                <p class="text-charcoal/80 leading-relaxed text-sm md:text-base">
+                    We use a small number of trusted third-party service providers to run Squinted. They process
+                    personal data on our behalf and under our instructions, and are contractually required to keep
+                    it secure and only use it for the purposes we specify:
+                </p>
+                <ul class="list-disc pl-5 space-y-2 text-charcoal/80 text-sm md:text-base">
+                    <li><strong>Stripe:</strong> Processes payments and payouts, and carries out fraud prevention
+                        checks. Stripe also acts as an independent controller in its own right for certain purposes,
+                        such as complying with its own anti-money laundering and financial regulatory obligations —
+                        see Stripe's own privacy policy for details.</li>
+                    <li><strong>Sendcloud:</strong> Manages shipping labels, courier selection, and delivery
+                        tracking for orders.</li>
+                    <li><strong>Ideal Postcode:</strong> Provides address lookup and validation at checkout and
+                        during seller onboarding.</li>
+                    <li><strong>Resend:</strong> Sends transactional emails, such as order confirmations and account
+                        notifications.</li>
+                    <li><strong>Supabase:</strong> Hosts our database and manages secure account authentication.</li>
+                    <li><strong>Railway:</strong> Hosts our backend infrastructure.</li>
+                    <li><strong>Formspree:</strong> Processes waitlist sign-ups submitted through our website ahead
+                        of the app launching.</li>
+                </ul>
+                <p class="text-charcoal/80 leading-relaxed text-sm md:text-base">
+                    We may add, change, or remove service providers as Squinted develops. Where this involves a
+                    material change to how your data is used, we'll update this policy accordingly.
+                </p>
+            </section>
+
+            <section class="space-y-3">
+                <h2 class="text-xl font-bold text-sageGreen uppercase tracking-tight">4. Our Legal Basis for Processing
                 </h2>
                 <p class="text-charcoal/80 leading-relaxed text-sm md:text-base">
                     Under UK GDPR, we only use your data when the law allows us to. Most commonly:
                 </p>
                 <ul class="list-disc pl-5 space-y-2 text-charcoal/80 text-sm md:text-base">
                     <li>Performance of a Contract: To fulfill the buy/sell agreement between users.</li>
-                    <li>Legal Obligation: To comply with UK tax laws (HMRC) and anti-money laundering regulations.</li>
+                    <li>Legal Obligation: To comply with UK tax laws (HMRC), including our obligation as an online
+                        marketplace to report certain seller income to HMRC under the UK's digital platform reporting
+                        rules, and anti-money laundering regulations.</li>
                     <li>Legitimate Interests: To prevent fraud and improve our marketplace security.</li>
                     <li>Consent: Where you have opted-in to receive our marketing newsletters.</li>
                 </ul>
             </section>
 
             <section class="space-y-3">
-                <h2 class="text-xl font-bold text-sageGreen uppercase tracking-tight">4. How Data is Shared Between
+                <h2 class="text-xl font-bold text-sageGreen uppercase tracking-tight">5. How Data is Shared Between
                     Buyers & Sellers
                 </h2>
                 <p class="text-charcoal/80 leading-relaxed text-sm md:text-base">
@@ -147,7 +179,7 @@
             </section>
 
             <section class="space-y-3">
-                <h2 class="text-xl font-bold text-sageGreen uppercase tracking-tight">5. Data Retentions
+                <h2 class="text-xl font-bold text-sageGreen uppercase tracking-tight">6. Data Retentions
                 </h2>
                 <p class="text-charcoal/80 leading-relaxed text-sm md:text-base">
                     We retain your data for as long as necessary to provide our services and comply with legal
@@ -161,7 +193,7 @@
             </section>
 
             <section class="space-y-3">
-                <h2 class="text-xl font-bold text-sageGreen uppercase tracking-tight">6. Your Legal Rights
+                <h2 class="text-xl font-bold text-sageGreen uppercase tracking-tight">7. Your Legal Rights
                 </h2>
                 <p class="text-charcoal/80 leading-relaxed text-sm md:text-base">
                     As a UK resident, you have the following rights:
@@ -180,12 +212,23 @@
             </section>
 
             <section class="space-y-3">
-                <h2 class="text-xl font-bold text-sageGreen uppercase tracking-tight">7. International Transfers
+                <h2 class="text-xl font-bold text-sageGreen uppercase tracking-tight">8. International Transfers
                 </h2>
                 <p class="text-charcoal/80 leading-relaxed text-sm md:text-base">
-                    If we transfer your data outside of the UK (for example, to a server located in the US), we ensure a
-                    similar degree of protection is afforded to it by using specific contracts approved by the UK
-                    government.
+                    Our database (Supabase) is hosted in the UK (London), and our backend infrastructure (Railway)
+                    is hosted in the EU (Amsterdam), so your data held with these providers stays within the UK/EEA.
+                </p>
+                <p class="text-charcoal/80 leading-relaxed text-sm md:text-base">
+                    Stripe, our payment provider, may process and store data outside the UK, including in the
+                    United States, as part of providing payment processing and fraud prevention services globally.
+                    Where this happens, Stripe ensures an equivalent level of protection through recognised
+                    safeguards, including the UK International Data Transfer Addendum and its participation in the
+                    UK Extension to the EU-U.S. Data Privacy Framework. You can read more in Stripe's own privacy
+                    policy.
+                </p>
+                <p class="text-charcoal/80 leading-relaxed text-sm md:text-base">
+                    If any other service provider we use changes where it stores or processes data, we will update
+                    this section accordingly.
                 </p>
             </section>
 

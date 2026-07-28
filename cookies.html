@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie & Similar Technologies Policy - Squinted</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        plasterPink: '#f3ece7',
+                        sageGreen: '#6b8271',
+                        charcoal: '#2d312e',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-plasterPink text-charcoal font-sans antialiased">
+
+    <!-- 🧭 STICKY NAVIGATION BAR WITH STRADDLING BRAND BOX -->
+    <header
+        class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-sageGreen/10 px-6 py-4 transition-all">
+        <div class="max-w-4xl mx-auto flex items-center justify-between relative">
+
+            <!-- Full-Bleed Brand Box pointing back to Homepage -->
+            <div
+                class="absolute top-[-16px] left-0 bg-white border-x border-b border-sageGreen/20 shadow-md rounded-b-3xl z-50 overflow-hidden w-28 md:w-36 h-28 md:h-36">
+                <a href="index.html" class="block w-full h-full relative group">
+                    <img src="assets/SquintedLogo.png" alt="Squinted Logo" class="w-full h-full object-cover" />
+                    <div
+                        class="absolute inset-0 bg-charcoal/5 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <span class="bg-white/90 text-charcoal text-xs font-bold px-2 py-1 rounded-md shadow-sm">←
+                            Home</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="w-28 md:w-36"></div>
+
+            <span class="text-xs uppercase tracking-widest font-semibold text-sageGreen text-right">The Legals</span>
+        </div>
+    </header>
+
+    <!-- 📄 COMPLIANCE DOCUMENT TEXT CANVAS -->
+    <main class="max-w-4xl mx-auto px-6 py-16 md:py-24">
+        <div class="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-sageGreen/5 space-y-10">
+
+            <!-- Document Header -->
+            <div class="border-b border-stone-100 pb-6">
+                <h1 class="text-3xl font-black uppercase tracking-tight text-charcoal mb-2">Cookie & Similar
+                    Technologies Policy</h1>
+                <p class="text-xs text-stone-400 font-medium">Last Updated: July 2026</p>
+            </div>
+
+            <!-- ⚠️ HEADLINE SUMMARY BOX -->
+            <div class="bg-plasterPink/60 border border-sageGreen/20 rounded-2xl p-6">
+                <p class="text-charcoal font-semibold text-sm md:text-base leading-relaxed">
+                    In short: our website (squinted.co.uk) doesn't currently use tracking, analytics, or advertising
+                    cookies at all. Our app doesn't use browser cookies — as a native app it uses secure on-device
+                    storage instead, purely to keep you logged in and to process payments safely through Stripe. We
+                    don't use any analytics or advertising SDKs in the app either. If any of this changes, we'll
+                    update this policy and, where the law requires it, ask for your consent first.
+                </p>
+            </div>
+
+            <section class="space-y-3">
+                <h2 class="text-xl font-bold text-sageGreen uppercase tracking-tight">1. What This Policy Covers</h2>
+                <p class="text-charcoal/80 leading-relaxed text-sm md:text-base">
+                    This policy explains the cookies used on our website, and the similar on-device technologies
+                    used in our app. It sits alongside our <a href="privacy.html"
+                        class="text-sageGreen hover:underline font-semibold">Privacy Policy</a>, which explains how
+                    we use any personal data more broadly, including data handled by the service providers who help
+                    us run Squinted.
+                </p>
+            </section>
+
+            <section class="space-y-3">
+                <h2 class="text-xl font-bold text-sageGreen uppercase tracking-tight">2. Our Website</h2>
+                <p class="text-charcoal/80 leading-relaxed text-sm md:text-base">
+                    At this stage, our website is primarily used to explain what Squinted is, host our legal and
+                    policy documents, and let people join our waitlist ahead of the app launching. It does not
+                    currently use:
+                </p>
+                <ul class="list-disc pl-5 space-y-2 text-charcoal/80 text-sm md:text-base">
+                    <li>Analytics or performance-tracking cookies.</li>
+                    <li>Advertising or profiling cookies.</li>
+                    <li>Social media tracking pixels.</li>
+                </ul>
+                <p class="text-charcoal/80 leading-relaxed text-sm md:text-base">
+                    Our waitlist sign-up form is provided by Formspree and does not use CAPTCHA or other
+                    spam-protection cookies. Formspree processes your submission to pass your details to us so we
+                    can email you when the app launches; it doesn't set tracking cookies on our website as part of
+                    this. You can read Formspree's own privacy policy for how they handle form submissions on their
+                    side.
+                </p>
+                <p class="text-charcoal/80 leading-relaxed text-sm md:text-base">
+                    Because we don't currently set any non-essential cookies on our website, we don't display a
+                    cookie consent banner — there's nothing that needs your consent under the Privacy and Electronic
+                    Communications Regulations (PECR) right now. If that changes — for example, if we introduce
+                    analytics or advertising in future — we'll add a consent mechanism at that point and update this
+                    policy first.
+                </p>
+            </section>
+
+            <section class="space-y-3">
+                <h2 class="text-xl font-bold text-sageGreen uppercase tracking-tight">3. Our App</h2>
+                <p class="text-charcoal/80 leading-relaxed text-sm md:text-base">
+                    The Squinted app is a native iOS/Android app, not a website, so it doesn't use browser cookies.
+                    Instead, it uses secure on-device storage for a small number of essential purposes:
+                </p>
+                <ul class="list-disc pl-5 space-y-2 text-charcoal/80 text-sm md:text-base">
+                    <li><strong>Staying Logged In:</strong> We use a secure session token, stored on your device, so
+                        you don't have to log in every time you open the app. This is provided by our authentication
+                        system and is essential to using your account.</li>
+                    <li><strong>Payments & Fraud Prevention:</strong> When you check out or receive a payout, Stripe
+                        (our payment provider) may use device-level identifiers as part of its fraud detection and
+                        security checks. This is essential to processing payments safely and is governed by Stripe's
+                        own privacy policy.</li>
+                </ul>
+                <p class="text-charcoal/80 leading-relaxed text-sm md:text-base">
+                    We do not currently use any analytics, advertising, or cross-app tracking technologies in the
+                    app. Our delivery, address lookup, and email notification providers (Sendcloud, Ideal Postcode,
+                    and Resend) are called from our own servers to process your order — they don't run any tracking
+                    code on your device. See our <a href="privacy.html"
+                        class="text-sageGreen hover:underline font-semibold">Privacy Policy</a> for how these
+                    providers are used to handle your personal data.
+                </p>
+            </section>
+
+            <section class="space-y-3">
+                <h2 class="text-xl font-bold text-sageGreen uppercase tracking-tight">4. Managing These Technologies
+                </h2>
+                <ul class="list-disc pl-5 space-y-2 text-charcoal/80 text-sm md:text-base">
+                    <li>You can manage cookies on our website through your browser settings at any time — though as
+                        we don't currently set non-essential cookies, there's nothing to opt out of.</li>
+                    <li>You can manage app permissions and stored data through your device's settings. Removing the
+                        app or clearing its data will remove the on-device session token described above, and you'll
+                        need to log in again.</li>
+                    <li>Further general guidance on cookies is available from the <a href="https://ico.org.uk/"
+                            target="_blank" rel="noopener noreferrer"
+                            class="text-sageGreen hover:underline font-semibold">Information Commissioner's
+                            Office</a>.</li>
+                </ul>
+            </section>
+
+            <section class="space-y-3">
+                <h2 class="text-xl font-bold text-sageGreen uppercase tracking-tight">5. Keeping This Policy Up to
+                    Date</h2>
+                <p class="text-charcoal/80 leading-relaxed text-sm md:text-base">
+                    If we introduce any new technology that changes what's set out above — for example, adding
+                    analytics to understand how the app is used, or introducing advertising — we will update this
+                    policy, and where the law requires your consent (such as for non-essential cookies or app
+                    tracking), we'll ask for it first.
+                </p>
+            </section>
+
+            <!-- ✉️ RE-ASSURANCE SUPPORT CONTACT CALLOUT -->
+            <div class="pt-6 border-t border-stone-100">
+                <p class="text-xs text-stone-500">
+                    This page should be read alongside our <a href="privacy.html"
+                        class="text-sageGreen hover:underline font-semibold">Privacy Policy</a> and <a
+                        href="terms.html" class="text-sageGreen hover:underline font-semibold">Terms of
+                        Service</a>. If you have questions regarding any aspect of Squinted, reach out to the
+                    Squinted Team at <a href="mailto:hello@squinted.co.uk"
+                        class="text-sageGreen hover:underline font-semibold">hello@squinted.co.uk</a>.
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- MINIMALIST COMPLIANCE FOOTER -->
+    <footer class="text-center py-8 text-xs text-stone-500 max-w-4xl mx-auto px-6 border-t border-sageGreen/10">
+        <p>© 2026 Squinted Ltd. Registered in England and Wales, company no. 16937508. Full company details are
+            available in our <a href="terms.html" class="underline hover:text-sageGreen">Terms of Service</a>. All
+            rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
