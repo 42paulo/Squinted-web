@@ -93,34 +93,47 @@
 
 <body class="bg-plasterPink text-charcoal font-sans antialiased selection:bg-sageGreen selection:text-white">
 
-    <!-- 🧭 NAVIGATION BAR WITH PROMINENT LOGO BRAND BOX -->
-
-    <header
-        class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-sageGreen/10 px-6 py-4 transition-all">
+    <!-- 🧭 NAVIGATION BAR WITH MOBILE MENU -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-sageGreen/10 px-6 py-4 transition-all">
         <div class="max-w-7xl mx-auto flex items-center justify-between relative">
 
-            <!-- Full-Bleed Brand Box (Zero padding, overflow hidden to snap the image to the rounded corners) -->
-            <div
-                class="absolute top-[-16px] left-0 bg-white border-x border-b border-sageGreen/20 shadow-md rounded-b-3xl z-50 overflow-hidden w-28 md:w-36 h-28 md:h-36">
+            <!-- Full-Bleed Brand Box -->
+            <div class="absolute top-[-16px] left-0 bg-white border-x border-b border-sageGreen/20 shadow-md rounded-b-3xl z-50 overflow-hidden w-28 md:w-36 h-28 md:h-36">
                 <a href="#" class="block w-full h-full">
-                    <!-- Stripped padding and forced to scale perfectly edge-to-edge -->
                     <img src="assets/SquintedLogo.png" alt="Squinted Logo" class="w-full h-full object-cover" />
                 </a>
             </div>
 
-            <!-- Generous spacer to keep navigation links safe from overlap -->
-            <div class="w-32 md:w-44"></div>
+            <!-- Generous spacer for logo clearance -->
+            <div class="w-28 md:w-44"></div>
 
+            <!-- Desktop Links (Hidden on Mobile) -->
             <nav class="hidden md:flex space-x-8 font-medium">
                 <a href="story.html" class="hover:text-sageGreen transition">The Squinted Story</a>
                 <a href="#how-it-works" class="hover:text-sageGreen transition">How it Works</a>
                 <a href="#benefits" class="hover:text-sageGreen transition">Benefits</a>
             </nav>
 
-            <a href="#download"
-                class="bg-sageGreen text-white px-5 py-2.5 rounded-full font-semibold shadow-sm hover:bg-charcoal transition duration-300 text-sm">
-                Join Waitlist
-            </a>
+            <!-- Actions Container (Waitlist Button + Mobile Toggle) -->
+            <div class="flex items-center gap-2">
+                <a href="#download" class="bg-sageGreen text-white px-4 md:px-5 py-2.5 rounded-full font-semibold shadow-sm hover:bg-charcoal transition duration-300 text-xs md:text-sm whitespace-nowrap">
+                    Join Waitlist
+                </a>
+
+                <!-- Mobile Hamburger Toggle Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-charcoal hover:text-sageGreen focus:outline-none rounded-xl bg-stone-100/80 active:bg-stone-200 transition" aria-label="Toggle Navigation Menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Card (Toggles open/close cleanly beneath header) -->
+        <div id="mobile-menu" class="hidden md:hidden max-w-sm ml-auto mt-3 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-sageGreen/10 space-y-3 text-sm font-medium">
+            <a href="story.html" class="block px-3 py-2 rounded-lg hover:bg-plasterPink hover:text-sageGreen transition">The Squinted Story</a>
+            <a href="#how-it-works" class="block px-3 py-2 rounded-lg hover:bg-plasterPink hover:text-sageGreen transition">How it Works</a>
+            <a href="#benefits" class="block px-3 py-2 rounded-lg hover:bg-plasterPink hover:text-sageGreen transition">Benefits</a>
         </div>
     </header>
 
@@ -472,6 +485,24 @@
 
         </div>
     </footer>
+
+<!-- Mobile Menu Toggle Script -->
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        // Toggle dropdown open/close on button tap
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Auto-close dropdown when a section link is tapped
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
 
 </body>
 
