@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary SEO Meta Tags -->
-    <title>Squinted | UK Pre-Loved Designer Glasses & Sunglasses App</title>
+    <title>Squinted | Buy &amp; Sell Pre-Owned Prescription Glasses UK</title>
     <meta name="description"
-        content="Join the waitlist for Squinted — the UK's dedicated peer-to-peer marketplace app for buying and selling pre-owned glasses, designer sunglasses, and frames.">
+        content="The UK's trusted marketplace for pre-owned prescription glasses, designer frames, and sunglasses. Turn used frames into cash or buy certified frames." />
     <link rel="canonical" href="https://squinted.co.uk/">
 
     <!-- Tailwind CSS CDN -->
@@ -27,11 +27,23 @@
         }
     </script>
 
-    <!-- SoftwareApplication Schema -->
+    <!-- Consolidated Schema Markup: Organization, SoftwareApplication & Merged FAQPage -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://squinted.co.uk/#organization",
+      "name": "Squinted Ltd",
+      "url": "https://squinted.co.uk",
+      "logo": "https://squinted.co.uk/assets/logo.png",
+      "description": "UK peer-to-peer marketplace for buying and selling pre-owned prescription eyewear, designer frames, and sunglasses.",
+      "sameAs": []
+    },
+    {
       "@type": "SoftwareApplication",
+      "@id": "https://squinted.co.uk/#app",
       "name": "Squinted",
       "operatingSystem": "iOS, Android",
       "applicationCategory": "ShoppingApplication",
@@ -45,15 +57,27 @@
       "description": "The UK's dedicated peer-to-peer marketplace app for buying and selling pre-owned spectacles, designer sunglasses, and eyewear accessories.",
       "applicationSubCategory": "Marketplace, Circular Fashion",
       "url": "https://squinted.co.uk"
-    }
-    </script>
-
-    <!-- FAQPage Schema for Rich Snippets -->
-    <script type="application/ld+json">
+    },
     {
-      "@context": "https://schema.org",
       "@type": "FAQPage",
+      "@id": "https://squinted.co.uk/#faq",
       "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where can I sell pre-owned prescription glasses in the UK?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Squinted is a dedicated UK marketplace where you can sell pre-owned prescription glasses, designer frames, and sunglasses online directly to buyers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Squinted buy frames directly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Squinted connects individual sellers directly with UK buyers, allowing you to set your own price and keep more profit than traditional trade-in services."
+          }
+        },
         {
           "@type": "Question",
           "name": "Is it legal and safe to buy pre-owned prescription glasses in the UK?",
@@ -88,8 +112,9 @@
         }
       ]
     }
-    </script>
-</head>
+  ]
+}
+</script>
 
 <body class="bg-plasterPink text-charcoal font-sans antialiased selection:bg-sageGreen selection:text-white">
 
@@ -270,13 +295,19 @@
                     <div class="space-y-4">
                         <div
                             class="w-12 h-12 rounded-full bg-plasterPink flex items-center justify-center font-bold text-sageGreen">
-                            1</div>
+                            1
+                        </div>
                         <h3 class="text-xl font-bold mb-2">List with an AI Assist</h3>
-                        <p class="text-charcoal/70 text-sm md:text-base">Got frames gathering dust? Snap a few bright
-                            photos and let our built-in <strong>AI Frame Screening</strong> handle the heavy lifting
-                            to help you list your spectacles or sunglasses in seconds.</p>
-                        <p class="text-charcoal/70 text-sm md:text-base">Turning your old glasses into cash has never
-                            been this smooth.</p>
+                        <p class="text-charcoal/70 text-sm md:text-base">
+                            Got frames gathering dust? Snap a few bright photos and let our built-in <strong>AI Frame
+                                Screening</strong> handle the heavy lifting to help you list your spectacles or
+                            sunglasses in seconds.
+                        </p>
+                        <p class="text-charcoal/70 text-sm md:text-base">
+                            Turning your old glasses into cash has never been this smooth. Find out more in our <a
+                                href="sell-glasses.html" class="text-sageGreen font-semibold hover:underline">Guide to
+                                Selling Used Glasses</a>.
+                        </p>
                     </div>
                     <!-- Shrink-to-Fit Image Wrapper -->
                     <div
@@ -356,6 +387,12 @@
                 </div>
 
             </div>
+            <div class="mt-4 p-4 bg-gray-50 rounded-lg border border-gray-200 text-sm text-gray-700">
+                <span class="font-semibold text-gray-900">Got more questions about buying pre-owned frames?</span>
+                Check our <a href="/prescription-relensing.html"
+                    class="text-indigo-600 hover:underline font-semibold">guide</a> for more info.
+            </div>
+
         </section>
 
         <!-- ⚖️ SECTION 4: THE BENEFITS GRID -->
