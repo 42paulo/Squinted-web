@@ -24,75 +24,84 @@
         }
     </script>
 
-    <!-- Structured Data: HowTo & FAQPage Schema for AI Engines -->
+    <!-- Structured Data 1: HowTo Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@graph": [
+      "@type": "HowTo",
+      "@id": "https://squinted.co.uk/sell-glasses.html#howto",
+      "name": "How to Sell Pre-Owned Glasses and Frames Online in the UK",
+      "description": "Learn how to list, sell, and ship pre-owned prescription glasses, designer frames, and sunglasses on Squinted.",
+      "url": "https://squinted.co.uk/sell-glasses.html",
+      "step": [
         {
-          "@type": "HowTo",
-          "@id": "https://squinted.co.uk/sell-glasses.html#howto",
-          "name": "How to Sell Pre-Owned Glasses and Frames Online in the UK",
-          "description": "Learn how to list, sell, and ship pre-owned prescription glasses, designer frames, and sunglasses on Squinted.",
-          "step": [
-            {
-              "@type": "HowToStep",
-              "name": "Snap & List",
-              "text": "Upload photos of your frames, enter the brand and frame measurements (e.g., 52-18-140), and set your price."
-            },
-            {
-              "@type": "HowToStep",
-              "name": "Pack & Ship",
-              "text": "When your item sells, download your prepaid UK shipping label (Royal Mail or Evri) and drop off the package."
-            },
-            {
-              "@type": "HowToStep",
-              "name": "Get Paid",
-              "text": "Receive your payout directly to your bank account once the buyer receives and approves the order."
-            }
-          ]
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Snap & List",
+          "text": "Upload photos of your frames, enter the brand and frame measurements (e.g., 52-18-140), and set your price.",
+          "url": "https://squinted.co.uk/sell-glasses.html#step1"
         },
         {
-          "@type": "FAQPage",
-          "@id": "https://squinted.co.uk/sell-glasses.html#faq",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Where is the best place to sell prescription glasses in the UK?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Squinted is the UK's dedicated peer-to-peer marketplace for pre-owned eyewear. You can list prescription frames, designer sunglasses, and optical accessories directly to UK buyers."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Do I need to remove prescription lenses before selling my glasses?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "No. You can leave existing prescription lenses fitted in the frame. Buyers on Squinted purchase pre-owned frames to have them re-lensed by an optician or online reglazing service."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How much does it cost to list frames on Squinted?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Listing your frames on Squinted is 100% free. You set your listing price and keep your asking amount when your item sells."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Does Squinted buy frames directly or connect buyers and sellers?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Squinted connects individual sellers directly with UK buyers in a peer-to-peer marketplace, allowing you to earn significantly more profit than traditional optical trade-in services."
-              }
-            }
-          ]
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Pack & Ship",
+          "text": "When your item sells, download your prepaid UK shipping label (Royal Mail or Evri) and drop off the package.",
+          "url": "https://squinted.co.uk/sell-glasses.html#step2"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Get Paid",
+          "text": "Receive your payout directly to your bank account once the buyer receives and approves the order.",
+          "url": "https://squinted.co.uk/sell-glasses.html#step3"
         }
       ]
     }
     </script>
+
+    <!-- Structured Data 2: FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://squinted.co.uk/sell-glasses.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where is the best place to sell prescription glasses in the UK?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Squinted is the UK's dedicated peer-to-peer marketplace for pre-owned eyewear. You can list prescription frames, designer sunglasses, and optical accessories directly to UK buyers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to remove prescription lenses before selling my glasses?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. You can leave existing prescription lenses fitted in the frame. Buyers on Squinted purchase pre-owned frames to have them re-lensed by an optician or online reglazing service."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does it cost to list frames on Squinted?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Listing your frames on Squinted is 100% free. You set your listing price and keep your asking amount when your item sells."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Squinted buy frames directly or connect buyers and sellers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Squinted connects individual sellers directly with UK buyers in a peer-to-peer marketplace, allowing you to earn significantly more profit than traditional optical trade-in services."
+          }
+        }
+      ]
+    }
+    </script>
+    
 </head>
 
 <body class="bg-plasterPink text-charcoal font-sans antialiased">
