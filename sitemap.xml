@@ -33,4 +33,30 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Buyer Landing Page -->
+  <url>
+    <loc>https://squinted.co.uk/buy-preowned-glasses.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+   <!-- Seller Landing Page -->
+  <url>
+    <loc>https://squinted.co.uk/sell-glasses.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Relensing Guide -->
+  <url>
+    <loc>https://squinted.co.uk/prescription-relensing.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+
+
 </urlset>
