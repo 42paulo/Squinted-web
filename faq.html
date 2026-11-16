@@ -21,6 +21,137 @@
             }
         }
     </script>
+
+    <!-- Structured Data: FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://squinted.co.uk/faq.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where can I sell pre-owned prescription glasses in the UK?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Squinted is a dedicated UK marketplace where you can sell pre-owned prescription glasses, designer frames, sunglasses and eyewear accessories online directly to buyers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Squinted buy frames directly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No — Squinted is a marketplace which connects individual sellers directly with UK buyers. As a seller you set your own selling price for your items and receive 100% of that value when a sale is completed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it legal to buy pre-owned prescription glasses in the UK?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. It is completely legal to buy and sell second-hand spectacle frames in the UK. Squinted operates as a peer-to-peer marketplace for frames and sunglasses. Buyers can purchase high-quality frames and then have an optician or online relensing specialist fit them with their specific prescription lenses."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I put new prescription lenses into second-hand frames?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Once your pre-owned frames arrive, you can take them directly to any high-street optician or use a trusted online re-lensing service to cut and fit a fresh pair of lenses matching your custom prescription."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Squinted protect buyers and sellers from fraud?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Squinted features a secure Buyer Protection payment system. Funds are held safely when a purchase is made and only released to the seller once the buyer receives the item and confirms it matches the listing description."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are Perfect Match Alerts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If you are looking for a specific frame size or measurement configuration, you can save your specs inside the Squinted app. Perfect Match works in the background and notifies you the moment another user lists glasses matching your target measurements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if the frames arrive and they just don't suit my face?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Individual return policies are set by each seller, so check the listing details before you buy. If the frames do not work out, you can easily relist them on Squinted to find their next owner."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I know the frames are authentic?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Squinted asks sellers to provide clear photos of the branding on the inner temple arms and any original packaging, and our team reviews flagged listings to help maintain marketplace trust."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are the lenses included in the price?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, frames are sold as listed with any existing lenses included. Because pre-owned frames usually contain the previous owner's prescription, we always recommend taking them to an optician or online reglazing service to fit your own custom lenses."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it safe to buy well-loved frames?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Squinted uses a clear Condition Guide from Mint to Fair so buyers know what to expect before ordering."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does it cost to re-lens?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most high-street opticians or online reglazing specialists charge a flat fee starting around £15 to £40 for basic single-vision lenses and fitting, making pre-owned designer frames significantly cheaper than buying new retail."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are pre-owned glasses frames hygienic to buy and wear?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Spectacle frames are durable, non-porous accessories made from materials like acetate, metal, or titanium. While Squinted guidelines ask sellers to clean their frames before shipping, taking pre-owned frames to an optician or online reglazing service routinely includes a professional ultrasonic deep clean, sanitization, and frame adjustment as standard."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I know if a pair of glasses on Squinted will fit me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Check the Measurements section on every listing for the three standard frame numbers (Lens width, Bridge width, and Temple length in millimetres) and compare them against a pair of glasses you already own that fits comfortably."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the Magnify feature?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Magnify is Squinted's listing boost tool. For a small fee, sellers can pin their frames to the top of the user feed for 7 days for maximum visibility."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do payments and shipping work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "All checkouts are managed securely via Stripe Connect, and shipping labels are standardized across the platform with trackable UK postage options."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body class="bg-plasterPink text-charcoal font-sans antialiased">
@@ -45,7 +176,7 @@
 
             <div class="w-28 md:w-36"></div>
 
-            <span class="text-xs uppercase tracking-widest font-semibold text-sageGreen">FAQ's</span>
+            <span class="text-xs uppercase tracking-widest font-semibold text-sageGreen">FAQs</span>
         </div>
     </header>
 
@@ -68,49 +199,47 @@
                     <h3 class="font-bold text-base md:text-lg text-charcoal">Where can I sell pre-owned prescription
                         glasses in the UK?</h3>
                     <p class="text-charcoal/80 text-sm md:text-base leading-relaxed">Squinted is a dedicated UK
-                        marketplace where you can sell pre-owned prescription glasses, designer frames, sunglasses and
-                        eyewear accessories
-                        online directly to buyers.</p>
+                        marketplace where you can <a href="sell-glasses.html"
+                            class="text-sageGreen hover:underline font-medium">sell pre-owned prescription glasses</a>,
+                        designer frames, sunglasses and eyewear accessories online directly to buyers.</p>
                 </div>
 
                 <div class="space-y-2">
                     <h3 class="font-bold text-base md:text-lg text-charcoal">Does Squinted buy frames directly?</h3>
-                    <p class="text-charcoal/80 text-sm md:text-base leading-relaxed">No - Squinted is a marketplace
-                        which connects individual
-                        sellers directly with UK buyers. As a seller you set your own selling price for your items and
-                        receive 100%
-                        of that value when a sale is completed.</p>
+                    <p class="text-charcoal/80 text-sm md:text-base leading-relaxed">No — Squinted is a marketplace
+                        which connects individual sellers directly with UK buyers. As a seller you set your own selling
+                        price for your items and receive 100% of that value when a sale is completed.</p>
                 </div>
 
                 <div class="space-y-2">
                     <h3 class="font-bold text-base md:text-lg text-charcoal">Is it legal to buy pre-owned
                         prescription glasses in the UK?</h3>
-                    <p class="text-charcoal/80 text-sm md:text-base leading-relaxed">Yes. It is completely legal to buy
-                        and sell second-hand spectacle frames in the UK. Squinted operates as a peer-to-peer marketplace
-                        for frames and sunglasses. Buyers can purchase high-quality frames and then have an optician or
-                        online relensing specialist fit them with their specific prescription lenses.</p>
+                    <p class="text-charcoal/80 text-sm md:text-base leading-relaxed">Yes. It is completely legal to <a
+                            href="buy-preowned-glasses.html" class="text-sageGreen hover:underline font-medium">buy and
+                            sell second-hand spectacle frames</a> in the UK. Squinted operates as a peer-to-peer
+                        marketplace for frames and sunglasses. Buyers can purchase high-quality frames and then have an
+                        optician or online relensing specialist fit them with their specific prescription lenses.</p>
                 </div>
 
                 <div class="space-y-2">
                     <h3 class="font-bold text-base md:text-lg text-charcoal">Can I put new prescription lenses into
                         second-hand frames?</h3>
                     <p class="text-charcoal/80 text-sm md:text-base leading-relaxed">Yes! It’s incredibly simple. Once
-                        your
-                        pre-owned frames arrive, you can take them directly to any high-street optician or use a trusted
-                        online re-lensing service. They will simply cut and fit a fresh pair of lenses matching your
-                        custom prescription directly into the frame structure. Read our full guide on <a
-                            href="/prescription-relensing.html" class="text-sageGreen hover:underline font-medium">How
-                            to Reglaze Second-Hand Glasses &amp; Replace Lenses
-                        </a> for details on prescription strengths and frame compatibility.</p>
+                        your pre-owned frames arrive, you can take them directly to any high-street optician or use a
+                        trusted online re-lensing service. They will simply cut and fit a fresh pair of lenses matching
+                        your custom prescription directly into the frame structure. Read our full guide on <a
+                            href="prescription-relensing.html" class="text-sageGreen hover:underline font-medium">How
+                            to Reglaze Second-Hand Glasses &amp; Replace Lenses</a> for details on prescription
+                        strengths and frame compatibility.</p>
                 </div>
 
                 <div class="space-y-2">
                     <h3 class="font-bold text-base md:text-lg text-charcoal">How does Squinted protect buyers and
                         sellers from fraud?</h3>
-                    <p class="text-charcoal/80 text-sm md:text-base leading-relaxed">Squinted features a secure,
-                        payment system. Funds are held safely when a purchase is made and only
+                    <p class="text-charcoal/80 text-sm md:text-base leading-relaxed">Squinted features a secure
+                        Buyer Protection payment system. Funds are held safely when a purchase is made and only
                         released to the seller once the buyer receives the item and confirms it matches the listing
-                        description."</p>
+                        description.</p>
                 </div>
 
                 <div class="space-y-2">
@@ -146,9 +275,8 @@
                     </h3>
                     <p class="text-charcoal/80 text-sm md:text-base leading-relaxed">Yes, you’re buying the whole
                         package! However, since most pre-owned frames come with the previous owner’s prescription, we
-                        usually recommend our "Re-lensing 101" trick. Unless you lucky enough to be notified by Squinted
-                        of a
-                        "Perfect Match", you’ll likely want to pop in your own lenses.
+                        always recommend taking them to an optician or online reglazing service to pop in your own
+                        custom lenses before wearing them for vision correction.
                     </p>
                 </div>
 
@@ -168,8 +296,7 @@
                     <p class="text-charcoal/80 text-sm md:text-base leading-relaxed">It’s usually way cheaper than
                         buying a whole new setup! Most local opticians or online lens-mounters charge a flat fee for the
                         lenses and the fitting. You’re essentially getting designer frames for a fraction of the cost,
-                        then just paying for the "glass" that helps you see. No squinting at the bill!"
-
+                        then just paying for the "glass" that helps you see. No squinting at the bill!
                     </p>
                 </div>
 
@@ -193,9 +320,7 @@
                     <p class="text-charcoal/80 text-sm md:text-base leading-relaxed">Check the "Measurements" section on
                         the listing! We’ve taught our sellers how to find those three little numbers (Lens, Bridge,
                         Temple) and our AI engine automatically populates them. If you have a pair of glasses at home
-                        that fits you perfectly, compare the numbers. If
-                        they match, you’re golden!"
-
+                        that fits you perfectly, compare the numbers. If they match, you’re golden!
                     </p>
                 </div>
 
